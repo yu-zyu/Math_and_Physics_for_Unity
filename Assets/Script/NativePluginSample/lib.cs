@@ -27,8 +27,6 @@ public class Lib
     [DllImport("NativePluginSample")]
     public static extern void SampleAPIFloatArray(float[] floatArray, int floatArraySize);
     [DllImport("NativePluginSample")]
-    public static extern float slopeBetweenPoints(float[] P1, float[] P2, int P1Size, int P2Size);
-    [DllImport("NativePluginSample")]
     public static extern void SampleAPIDoubleArray(double[] doubleArray, int doubleArraySize);
 
     // 文字列
@@ -36,4 +34,8 @@ public class Lib
     public static extern string SampleAPIString1();
     [DllImport("NativePluginSample")]
     public static extern string SampleAPIString2(string str);
+
+
+    
 }
+

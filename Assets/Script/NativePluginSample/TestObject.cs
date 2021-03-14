@@ -27,17 +27,14 @@ public class TestObject : MonoBehaviour
         float[] f_s = new float[] { 111.0f, 222.0f, 333.0f };
         float[] f_s2 = new float[] { 1.0f, 5.0f};
         float[] f_s3 = new float[] { -2.0f, 0.0f};
-        float f_s4;
         double[] d_s = new double[] { 111.0, 222.0, 333.0 };
         Lib.SampleAPIIntArray(i_s, i_s.Length);
         Lib.SampleAPILongArray(l_s, l_s.Length);
         Lib.SampleAPIFloatArray(f_s, f_s.Length);
-        f_s4 = Lib.slopeBetweenPoints(f_s2, f_s3, f_s2.Length, f_s3.Length);
         Lib.SampleAPIDoubleArray(d_s, d_s.Length);
         Debug.LogFormat("int:    {0},{1},{2}", i_s[0], i_s[1], i_s[2]);
         Debug.LogFormat("long:   {0},{1},{2}", l_s[0], l_s[1], l_s[2]);
         Debug.LogFormat("float:  {0},{1},{2}", f_s[0], f_s[1], f_s[2]);
-        Debug.LogFormat("float:  "+ f_s4);
         Debug.LogFormat("double: {0},{1},{2}", d_s[0], d_s[1], d_s[2]);
 
         string st = "MyTest ";
