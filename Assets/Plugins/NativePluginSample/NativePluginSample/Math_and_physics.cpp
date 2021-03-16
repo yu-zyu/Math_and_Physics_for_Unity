@@ -41,7 +41,7 @@ MathPhysicsAPI bool arePerp(float slope1, float slope2)
 }
 
 /// <summary>
-/// ‚Q‚Â‚Ì’¼ü‚ÌŒğ“_‚ğ‹‚ß‚é
+/// ‚Q‚Â‚Ì’¼ü‚ÌŒğ“_‚ğ‹‚ß‚é 
 /// </summary>
 /// <param name="L1Point">‘æ1‚Ì’¼üã‚Ì2D‚Ì“_</param>
 /// <param name="L1Slope">‘æ1‚Ì’¼ü‚ÌŒX‚«</param>
