@@ -7,4 +7,6 @@
 
 extern "C" {
 	MathPhysicsAPI float slopeBetweenPoints(float *P1, float *P2);
+	MathPhysicsAPI float perpSlope(float slope);
+	MathPhysicsAPI bool arePerp(float slope1, float slope2);
 }
