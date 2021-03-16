@@ -39,3 +39,25 @@ MathPhysicsAPI bool arePerp(float slope1, float slope2)
 
 	return false;
 }
+
+/// <summary>
+/// ２つの直線の交点を求める
+/// </summary>
+/// <param name="L1Point">第1の直線上の2Dの点</param>
+/// <param name="L1Slope">第1の直線の傾き</param>
+/// <param name="L2Point">第2の直線上の2Dの点</param>
+/// <param name="L2Slope">第2の直線の傾き</param>
+/// <returns>求める点の座標を格納したfloat配列</returns>
+MathPhysicsAPI float *lineIntersect(
+	float *L1Point, float L1Slope, float *L2Point, float L2Slope)
+{
+	// 答えを格納するための配列 temp
+	float temp[2] = { 0, 0 };
+	// xについて解く
+	temp[0] = (L1Slope * L1Point[0] - L2Slope * L2Point[0] + L2Point[1] - L1Point[1]) /
+		 (L1Slope - L2Slope);
+	// 得られたxの値を代入して、yの値を求める
+	temp[1] = L1Slope * (temp[0] - L1Point[0]) + L1Point[1];
+
+	return temp;
+}

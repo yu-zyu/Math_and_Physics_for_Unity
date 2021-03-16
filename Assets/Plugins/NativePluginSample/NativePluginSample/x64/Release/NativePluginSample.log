@@ -1,8 +1,9 @@
 ﻿  Math_and_physics.cpp
      ライブラリ G:\Documents\Math_and_Physics_for_Unity\Assets\Plugins\NativePluginSample\x64\Release\NativePluginSample.lib とオブジェクト G:\Documents\Math_and_Physics_for_Unity\Assets\Plugins\NativePluginSample\x64\Release\NativePluginSample.exp を作成中
   コード生成しています。
-  2 of 17 functions (11.8%) were compiled, the rest were copied from previous compilation.
-    2 functions were new in current compilation
+G:\Documents\Math_and_Physics_for_Unity\Assets\Plugins\NativePluginSample\NativePluginSample\Math_and_physics.cpp(62): warning C4172: ローカル変数またはテンポラリのアドレスを返します: temp
+  1 of 18 functions ( 5.6%) were compiled, the rest were copied from previous compilation.
+    0 functions were new in current compilation
     0 functions had inline decision re-evaluated but remain unchanged
   コード生成が終了しました。
   NativePluginSample.vcxproj -> G:\Documents\Math_and_Physics_for_Unity\Assets\Plugins\NativePluginSample\x64\Release\NativePluginSample.dll
