@@ -28,7 +28,7 @@ public class Tilt_Unity : MonoBehaviour
         lineRenderer.SetPosition(0, P1_transform.position);
         lineRenderer.SetPosition(1, P2_transform.position);
 
-        Debug.LogFormat("float:  "+ m);
+       // Debug.LogFormat("float:  "+ m);
         
     }
 }
