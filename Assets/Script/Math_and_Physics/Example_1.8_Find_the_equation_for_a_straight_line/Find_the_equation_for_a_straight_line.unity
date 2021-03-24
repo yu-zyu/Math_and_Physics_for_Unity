@@ -423,9 +423,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1316a30e662087746b1147ef7c4972de, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  tilt_unity: {fileID: 2004729304}
   p1_x: 0
   p1_y: 0
   m: 2
+  isGenerateStraight: 0
 --- !u!114 &2004729304
 MonoBehaviour:
   m_ObjectHideFlags: 0
