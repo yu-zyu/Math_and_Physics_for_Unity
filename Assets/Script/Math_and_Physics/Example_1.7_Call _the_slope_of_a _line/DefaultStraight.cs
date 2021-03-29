@@ -6,6 +6,7 @@ public class DefaultStraight : MonoBehaviour
 {
     public float a;
     public float b;
+    public float c;
     public float m;
     // Start is called before the first frame update
     void Start()
@@ -15,9 +16,10 @@ public class DefaultStraight : MonoBehaviour
         
     }
 
-    // Update is called once per frame
-    void Update()
+    public float getIntercept()
     {
-        
+        return  c / b;
     }
+
+
 }
