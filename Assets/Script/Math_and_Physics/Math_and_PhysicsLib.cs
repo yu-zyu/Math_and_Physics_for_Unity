@@ -1,4 +1,5 @@
 ﻿using System.Runtime.InteropServices;
+using System;
 
 public class Math_and_PhysicsLib
 {
@@ -11,5 +12,5 @@ public class Math_and_PhysicsLib
     [DllImport("NativePluginSample")]
     public static extern bool arePerp(float slope1, float slope2);
     [DllImport("NativePluginSample")]
-    public static extern float lineIntersect(float[] L1Point, float L1Slope, float[] L2Point, float L2Slope);
+    public static extern IntPtr lineIntersect(float[] L1Point, float L1Slope, float[] L2Point, float L2Slope);
 }

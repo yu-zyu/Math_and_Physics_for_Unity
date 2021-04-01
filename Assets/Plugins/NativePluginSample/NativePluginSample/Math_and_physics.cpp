@@ -40,6 +40,9 @@ MathPhysicsAPI bool arePerp(float slope1, float slope2)
 	return false;
 }
 
+
+	// “š‚¦‚ğŠi”[‚·‚é‚½‚ß‚Ì”z—ñ temp
+	float temp[2] = { 0, 0 };
 /// <summary>
 /// ‚Q‚Â‚Ì’¼ü‚ÌŒğ“_‚ğ‹‚ß‚é 
 /// </summary>
@@ -51,8 +54,8 @@ MathPhysicsAPI bool arePerp(float slope1, float slope2)
 MathPhysicsAPI float *lineIntersect(
 	float *L1Point, float L1Slope, float *L2Point, float L2Slope)
 {
-	// “š‚¦‚ğŠi”[‚·‚é‚½‚ß‚Ì”z—ñ temp
-	float temp[2] = { 0, 0 };
+//	temp[0] = 3;
+//	temp[1] = 3;
 	// x‚É‚Â‚¢‚Ä‰ğ‚­
 	temp[0] = (L1Slope * L1Point[0] - L2Slope * L2Point[0] + L2Point[1] - L1Point[1]) /
 		 (L1Slope - L2Slope);
