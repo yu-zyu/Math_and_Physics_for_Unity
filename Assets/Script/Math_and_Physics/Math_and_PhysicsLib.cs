@@ -21,7 +21,7 @@ public class Math_and_PhysicsLib
     public static extern float distance3D(float[] P1, float[] P2);
 
     [DllImport("NativePluginSample")]
-    public static extern float find2DMidPoint(float[] P1, float[] P2);
+    public static extern IntPtr find2DMidPoint(float[] P1, float[] P2);
 
     [DllImport("NativePluginSample")]
     public static extern float find3DMidPoint(float[] P1, float[] P2);
