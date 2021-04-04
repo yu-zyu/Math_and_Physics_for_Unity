@@ -237,6 +237,8 @@ MonoBehaviour:
   distanceAB: 0
   distanceBC: 0
   distanceCA: 0
+  A2B2: 0
+  C2: 0
   A:
   - 20
   - 50

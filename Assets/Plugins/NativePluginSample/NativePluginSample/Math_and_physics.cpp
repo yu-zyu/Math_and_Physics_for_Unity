@@ -90,6 +90,22 @@ MathPhysicsAPI float distance2D(float* P1, float* P2) {
 	);
 }
 
+/// <summary>
+/// 2点間の距離の計算 
+/// </summary>
+/// <param name="P1">点1を表す要素数２のfloat配列</param>
+/// <param name="P2">点2を表す要素数２のfloat配列</param>
+/// <returns>2点間の距離</returns>
+MathPhysicsAPI float distance3D(float* P1, float* P2) {
+    	
+	//求める距離を計算して、その値を返す
+	return (float)sqrt(
+		pow(P2[0] - P1[0], 2) +
+		pow(P2[1] - P1[1], 2) +
+		pow(P2[2] - P1[2], 2)
+	);
+}
+
 
 // 答えを格納するための配列 temp
  MathPhysicsAPI float find2DMidPoint_temp[2] = { 0, 0 };

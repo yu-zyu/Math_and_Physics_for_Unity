@@ -14,6 +14,7 @@ extern "C" {
 
 	//ëÊ2èÕ
 	MathPhysicsAPI float distance2D(float* P1, float* P2);
+	MathPhysicsAPI float distance3D(float* P1, float* P2);
 	MathPhysicsAPI float* find2DMidPoint(float* P1, float* P2);
 	MathPhysicsAPI float* find3DMidPoint(float* P1, float* P2);
 	MathPhysicsAPI struct sphere;

@@ -1,9 +1,9 @@
 ﻿  Math_and_physics.cpp
-G:\Documents\Math_and_Physics_for_Unity\Assets\Plugins\NativePluginSample\NativePluginSample\Math_and_Physics.h(19,30): warning C4091: '__declspec(dllexport)': 変数が何も宣言されていないときは、'sphere' の左辺を無視します。
+G:\Documents\Math_and_Physics_for_Unity\Assets\Plugins\NativePluginSample\NativePluginSample\Math_and_Physics.h(20,30): warning C4091: '__declspec(dllexport)': 変数が何も宣言されていないときは、'sphere' の左辺を無視します。
      ライブラリ G:\Documents\Math_and_Physics_for_Unity\Assets\Plugins\NativePluginSample\x64\Release\NativePluginSample.lib とオブジェクト G:\Documents\Math_and_Physics_for_Unity\Assets\Plugins\NativePluginSample\x64\Release\NativePluginSample.exp を作成中
   コード生成しています。
-  4 of 25 functions (16.0%) were compiled, the rest were copied from previous compilation.
-    4 functions were new in current compilation
+  1 of 26 functions ( 3.8%) were compiled, the rest were copied from previous compilation.
+    1 functions were new in current compilation
     0 functions had inline decision re-evaluated but remain unchanged
   コード生成が終了しました。
   NativePluginSample.vcxproj -> G:\Documents\Math_and_Physics_for_Unity\Assets\Plugins\NativePluginSample\x64\Release\NativePluginSample.dll
