@@ -8,8 +8,10 @@ public class MidpointBetweenTwoPoints3D : MonoBehaviour
 {
     public Transform P1_transform;
     public Transform P2_transform;
+    public Transform P3_transform;
     public float[] P1 = new float[3];
     public float[] P2 = new float[3];
+
     public float m;
     public float distance;
     public float[] midPoint = new float[3];
@@ -36,7 +38,7 @@ public class MidpointBetweenTwoPoints3D : MonoBehaviour
         Marshal.Copy(mid, midPoint, 0,3);
         lineRenderer.SetPosition(0, P1_transform.position);
         lineRenderer.SetPosition(1, P2_transform.position);
-
+        P3_transform.position = new Vector3(midPoint[0], midPoint[1], midPoint[2]);
        // Debug.LogFormat("float:  "+ m);
         
     }
