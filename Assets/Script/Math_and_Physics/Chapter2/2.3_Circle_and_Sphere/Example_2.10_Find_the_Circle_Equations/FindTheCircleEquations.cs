@@ -2,16 +2,27 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class CircleGraph : MonoBehaviour
+public class FindTheCircleEquations : MonoBehaviour
 {
+    public Transform player;
+    public Transform playerCircle;
     public float h;
     public float k;
     public float r;
-    public float r2;
+    public LineRenderer lineRenderer;
 
     // Start is called before the first frame update
     void Start()
     {
+        //距離の公式を使って半径を求める
+        r = Mathf.Pow(playerCircle.position.x - player.position.x, 2) + Mathf.Pow(playerCircle.position.y - player.position.y, 2);
+
+        lineRenderer.SetPosition(0, player.position);
+        lineRenderer.SetPosition(1, playerCircle.position);
+
+        h = player.position.x;
+        k = player.position.y;
+
         float sqrtR = Mathf.Sqrt(r);
         for (float i = h - sqrtR; i <= h + sqrtR; i += 0.1f)
         {
