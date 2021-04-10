@@ -26,7 +26,12 @@ public class Math_and_PhysicsLib
     [DllImport("NativePluginSample")]
     public static extern IntPtr find3DMidPoint(float[] P1, float[] P2);
 
-    public struct sphere { };
+    public struct sphere {
+        [MarshalAs(UnmanagedType.ByValArray, SizeConst = 3)]
+        public float[] center;
+        public float radius;
+    };
+
 
     [DllImport("NativePluginSample")]
     public static extern bool ColBetweenSpheres(ref sphere S1, ref sphere S2);
