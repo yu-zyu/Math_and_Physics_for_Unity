@@ -14,6 +14,7 @@ public class Trigonometric : MonoBehaviour
     public float secA;
     public float cotA;
 
+
     // Start is called before the first frame update
     void Start()
     {
@@ -25,6 +26,9 @@ public class Trigonometric : MonoBehaviour
         cscA = 1 / sinA;
         secA = 1 / cosA;
         cotA = 1 / tanA;
+
+
+
     }
 
     // Update is called once per frame
