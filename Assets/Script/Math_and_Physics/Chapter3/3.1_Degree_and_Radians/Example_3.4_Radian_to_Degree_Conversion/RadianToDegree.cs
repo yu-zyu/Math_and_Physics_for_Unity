@@ -6,7 +6,7 @@ public class RadianToDegree : MonoBehaviour
 {
     public float Degree;
     public float[] Radian = new float[2];
-    float pi = 3.141592654f;
+//    float pi = 3.141592654f;
 
     // Start is called before the first frame update
     void Start()
