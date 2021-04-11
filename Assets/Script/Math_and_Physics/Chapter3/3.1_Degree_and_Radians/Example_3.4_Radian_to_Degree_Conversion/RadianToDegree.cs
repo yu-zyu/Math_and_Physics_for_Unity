@@ -11,6 +11,7 @@ public class RadianToDegree : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        //piが相殺されるので計算がいらない！
         Degree = ((Radian[1]) / Radian[0]) * (180);
         Debug.Log(Degree);
 
