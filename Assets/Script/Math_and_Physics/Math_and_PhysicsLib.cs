@@ -35,4 +35,9 @@ public class Math_and_PhysicsLib
 
     [DllImport("NativePluginSample")]
     public static extern bool ColBetweenSpheres(ref sphere S1, ref sphere S2);
+
+
+    [DllImport("NativePluginSample")]
+    public static extern float calcAngle2D(float[] p1, float[] p2);
+
 }
