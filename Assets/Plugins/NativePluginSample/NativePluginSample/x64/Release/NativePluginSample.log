@@ -2,18 +2,18 @@
 G:\Documents\Math_and_Physics_for_Unity\Assets\Plugins\NativePluginSample\NativePluginSample\Math_and_Physics.h(20,30): warning C4091: '__declspec(dllexport)': 変数が何も宣言されていないときは、'sphere' の左辺を無視します。
 G:\Documents\Math_and_Physics_for_Unity\Assets\Plugins\NativePluginSample\NativePluginSample\Math_and_Physics.h(27,37): warning C4091: '__declspec(dllexport)': 変数が何も宣言されていないときは、'Vector2D_comp' の左辺を無視します。
 G:\Documents\Math_and_Physics_for_Unity\Assets\Plugins\NativePluginSample\NativePluginSample\Math_and_Physics.h(28,38): warning C4091: '__declspec(dllexport)': 変数が何も宣言されていないときは、'Vector2D_polar' の左辺を無視します。
-G:\Documents\Math_and_Physics_for_Unity\Assets\Plugins\NativePluginSample\NativePluginSample\Math_and_Physics.h(29,38): error C2526: 'PolarToCompConversion': C のリンケージ関数は C++ のクラス 'Vector2D_comp' を戻せません。
-G:\Documents\Math_and_Physics_for_Unity\Assets\Plugins\NativePluginSample\NativePluginSample\Math_and_Physics.h(29): message : 'Vector2D_comp' の宣言を確認してください
 G:\Documents\Math_and_Physics_for_Unity\Assets\Plugins\NativePluginSample\NativePluginSample\Math_and_Physics.h(31,31): warning C4091: '__declspec(dllexport)': 変数が何も宣言されていないときは、'Vector3D' の左辺を無視します。
 G:\Documents\Math_and_Physics_for_Unity\Assets\Plugins\NativePluginSample\NativePluginSample\Math_and_physics.cpp(144,2): warning C4091: '__declspec(dllexport)': 変数が何も宣言されていないときは、'sphere' の左辺を無視します。
-G:\Documents\Math_and_Physics_for_Unity\Assets\Plugins\NativePluginSample\NativePluginSample\Math_and_physics.cpp(205,3): warning C4091: 'typedef __declspec(dllexport)': 変数が何も宣言されていないときは、'Vector2D_comp' の左辺を無視します。
-G:\Documents\Math_and_Physics_for_Unity\Assets\Plugins\NativePluginSample\NativePluginSample\Math_and_physics.cpp(211,3): warning C4091: '__declspec(dllexport)': 変数が何も宣言されていないときは、'Vector2D_polar' の左辺を無視します。
-G:\Documents\Math_and_Physics_for_Unity\Assets\Plugins\NativePluginSample\NativePluginSample\Math_and_physics.cpp(221,2): error C2556: 'Vector2D_comp PolarToCompConversion(Vector2D_polar,Vector2D_comp &)': オーバーロード関数は、'void PolarToCompConversion(Vector2D_polar,Vector2D_comp &)' と戻り値の型のみが異なります。
-G:\Documents\Math_and_Physics_for_Unity\Assets\Plugins\NativePluginSample\NativePluginSample\Math_and_Physics.h(29): message : 'PolarToCompConversion' の宣言を確認してください
-G:\Documents\Math_and_Physics_for_Unity\Assets\Plugins\NativePluginSample\NativePluginSample\Math_and_physics.cpp(220,39): error C2371: 'PolarToCompConversion': 再定義されています。異なる基本型です。
-G:\Documents\Math_and_Physics_for_Unity\Assets\Plugins\NativePluginSample\NativePluginSample\Math_and_Physics.h(29): message : 'PolarToCompConversion' の宣言を確認してください
+G:\Documents\Math_and_Physics_for_Unity\Assets\Plugins\NativePluginSample\NativePluginSample\Math_and_physics.cpp(206,3): warning C4091: '__declspec(dllexport)': 変数が何も宣言されていないときは、'Vector2D_comp' の左辺を無視します。
+G:\Documents\Math_and_Physics_for_Unity\Assets\Plugins\NativePluginSample\NativePluginSample\Math_and_physics.cpp(212,3): warning C4091: '__declspec(dllexport)': 変数が何も宣言されていないときは、'Vector2D_polar' の左辺を無視します。
 G:\Documents\Math_and_Physics_for_Unity\Assets\Plugins\NativePluginSample\NativePluginSample\Math_and_physics.cpp(224,20): warning C4244: '=': 'double' から 'float' への変換です。データが失われる可能性があります。
 G:\Documents\Math_and_Physics_for_Unity\Assets\Plugins\NativePluginSample\NativePluginSample\Math_and_physics.cpp(225,20): warning C4244: '=': 'double' から 'float' への変換です。データが失われる可能性があります。
-G:\Documents\Math_and_Physics_for_Unity\Assets\Plugins\NativePluginSample\NativePluginSample\Math_and_physics.cpp(247,25): warning C4244: '=': 'double' から 'float' への変換です。データが失われる可能性があります。
-G:\Documents\Math_and_Physics_for_Unity\Assets\Plugins\NativePluginSample\NativePluginSample\Math_and_physics.cpp(365,3): warning C4091: '__declspec(dllexport)': 変数が何も宣言されていないときは、'Vector3D' の左辺を無視します。
-G:\Documents\Math_and_Physics_for_Unity\Assets\Plugins\NativePluginSample\NativePluginSample\Math_and_physics.cpp(363,76): warning C4244: 'return': 'double' から 'float' への変換です。データが失われる可能性があります。
+G:\Documents\Math_and_Physics_for_Unity\Assets\Plugins\NativePluginSample\NativePluginSample\Math_and_physics.cpp(246,25): warning C4244: '=': 'double' から 'float' への変換です。データが失われる可能性があります。
+G:\Documents\Math_and_Physics_for_Unity\Assets\Plugins\NativePluginSample\NativePluginSample\Math_and_physics.cpp(364,3): warning C4091: '__declspec(dllexport)': 変数が何も宣言されていないときは、'Vector3D' の左辺を無視します。
+G:\Documents\Math_and_Physics_for_Unity\Assets\Plugins\NativePluginSample\NativePluginSample\Math_and_physics.cpp(362,76): warning C4244: 'return': 'double' から 'float' への変換です。データが失われる可能性があります。
+     ライブラリ G:\Documents\Math_and_Physics_for_Unity\Assets\Plugins\NativePluginSample\x64\Release\NativePluginSample.lib とオブジェクト G:\Documents\Math_and_Physics_for_Unity\Assets\Plugins\NativePluginSample\x64\Release\NativePluginSample.exp を作成中
+  コード生成しています。
+  Previous IPDB not found, fall back to full compilation.
+  All 30 functions were compiled because no usable IPDB/IOBJ from previous compilation was found.
+  コード生成が終了しました。
+  NativePluginSample.vcxproj -> G:\Documents\Math_and_Physics_for_Unity\Assets\Plugins\NativePluginSample\x64\Release\NativePluginSample.dll

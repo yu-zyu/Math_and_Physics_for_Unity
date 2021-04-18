@@ -200,7 +200,8 @@ MathPhysicsAPI struct sphere {
 //---------------------------------------------------------------------
 
  //ベクトルを成分で格納する構造体
- typedef MathPhysicsAPI struct Vector2D_comp{
+ MathPhysicsAPI struct Vector2D_comp{
+
 	 float x, y;
  };
 
@@ -217,23 +218,21 @@ MathPhysicsAPI struct sphere {
  /// </summary>
  /// <param name="vec">大きさと向きを使って表したベクトル</param>
  /// <returns>変換後のベクトル</returns>
-  MathPhysicsAPI struct Vector2D_comp PolarToCompConversion(Vector2D_polar vec,  Vector2D_comp& temp)
- {
+ MathPhysicsAPI void PolarToCompConversion(Vector2D_polar vec, Vector2D_comp& temp){
 	 //答えを格納する一時的変数
 	 //値を代入
 	 temp.x = vec.mag * cos(vec.dir * PI / 180);
 	 temp.y = vec.mag * sin(vec.dir * PI / 180);
 	 //答えを返す
-	 return temp;
- }
+	 //return temp;
+ };
 
   /// <summary>
  /// ベクトルを大きさと向きを使った表示から成分表示に変換
  /// </summary>
  /// <param name="vec">大きさと向きを使って表したベクトル</param>
  /// <returns>変換後のベクトル</returns>
- MathPhysicsAPI void CompToPolarConversion(Vector2D_comp vec ,Vector2D_polar temp)
- {
+ MathPhysicsAPI void CompToPolarConversion(Vector2D_comp vec, Vector2D_polar& temp){
 	 //答えを格納する一時的変数
 	 //Vector2D_polar temp = { 0, 0 };
 	 temp = { 0, 0 };
@@ -241,7 +240,7 @@ MathPhysicsAPI struct sphere {
 	 temp.mag = sqrt(vec.x * vec.x + vec.y * vec.y);
 	 //次の部分でゼロで割るという問題が生じないようにチェック
 	 if (temp.mag == 0) {
-		// return temp;
+		 // return temp;
 	 }
 	 //求める角を計算。第1または第4象限の角を返すasin()を使う
 	 temp.dir = (180 / PI) * asin(vec.y / temp.mag);
@@ -255,7 +254,7 @@ MathPhysicsAPI struct sphere {
 	 }
 	 //新しいベクトルを返す
 	 //return temp;
- }
+ };
 #ifndef _3DVECTOR_H_
 #define _3DVECTOR_H_
 #endif

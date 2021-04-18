@@ -26,7 +26,7 @@ extern "C" {
 	//ëÊ4èÕ
 	MathPhysicsAPI struct Vector2D_comp;
 	MathPhysicsAPI struct Vector2D_polar;
-	MathPhysicsAPI struct Vector2D_comp PolarToCompConversion(Vector2D_polar vec,Vector2D_comp& temp);
+	MathPhysicsAPI void PolarToCompConversion(Vector2D_polar vec, Vector2D_comp& temp);
 	MathPhysicsAPI void CompToPolarConversion(Vector2D_comp vec, Vector2D_polar& temp);
 	MathPhysicsAPI class Vector3D;
 
