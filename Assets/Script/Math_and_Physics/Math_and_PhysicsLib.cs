@@ -40,4 +40,22 @@ public class Math_and_PhysicsLib
     [DllImport("NativePluginSample")]
     public static extern float calcAngle2D(float[] p1, float[] p2);
 
+    public struct Vector2D_comp {
+        public float x,y;
+    };
+
+    public struct Vector2D_polar {
+        public float mag, dir;
+    };
+
+    [DllImport("NativePluginSample")]
+    public static extern void PolarToCompConversion(Vector2D_polar vec, ref Vector2D_comp temp);
+
+    [DllImport("NativePluginSample")]
+    public static extern void CompToPolarConversion(Vector2D_comp vec, ref Vector2D_polar temp);
+
+
+  //  [DllImport("NativePluginSample")]
+  //  public static extern class Vector3D;
+
 }
