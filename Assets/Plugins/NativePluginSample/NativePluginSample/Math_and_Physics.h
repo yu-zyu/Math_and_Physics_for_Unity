@@ -30,4 +30,8 @@ extern "C" {
 	MathPhysicsAPI void CompToPolarConversion(Vector2D_comp vec, Vector2D_polar& temp);
 	MathPhysicsAPI class Vector3D;
 
+	//ëÊ5èÕ
+	MathPhysicsAPI struct Matrix3X3;
+	MathPhysicsAPI bool areMatricesEqual(Matrix3X3& a, Matrix3X3& b);
+
 }

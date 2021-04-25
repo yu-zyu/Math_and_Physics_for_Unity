@@ -259,109 +259,134 @@ MathPhysicsAPI struct sphere {
 #define _3DVECTOR_H_
 #endif
 
- MathPhysicsAPI class Vector3D 
- {
-     private:
-	     float x, y, z;
-     public:
-	
-		 /// <summary>
-		 /// コンストラクタ
-		 /// </summary>
-		 /// <param name="ex">ベクトルのi成分</param>
-		 /// <param name="why">ベクトルのj成分</param>
-		 /// <param name="zee">ベクトルのk成分</param>
-		 /// 出力　なし
-		 Vector3D(float ex = 0, float why = 0, float zee = 0) {
-			 x = ex; y = why; z = zee;
-		 }
+// MathPhysicsAPI class Vector3D 
+// {
+//     private:
+//	     float x, y, z;
+//     public:
+//	
+//		 /// <summary>
+//		 /// コンストラクタ
+//		 /// </summary>
+//		 /// <param name="ex">ベクトルのi成分</param>
+//		 /// <param name="why">ベクトルのj成分</param>
+//		 /// <param name="zee">ベクトルのk成分</param>
+//		 /// 出力　なし
+//		 Vector3D(float ex = 0, float why = 0, float zee = 0) {
+//			 x = ex; y = why; z = zee;
+//		 }
+//
+//		 /// <summary>
+//		 /// デストラクタ
+//		 /// </summary>
+//		 /// <returns>なし</returns>
+//		 ~Vector3D(){}
+//
+//		 /// <summary>
+//		 /// 呼び出しベクトルの大きさを計算
+//		 /// </summary>
+//		 /// <returns></returns>
+//		 float getMagnitude() {
+//			 return sqrtf(x * x + y * y + z * z);
+//		 }
+//
+//		 /// <summary>
+//		 /// ベクトルにスカラー値を掛ける
+//		 /// </summary>
+//		 /// <param name="num">ベクトルに掛けるスカラー値</param>
+//		 /// <returns>新しくできたベクトル</returns>
+//		 Vector3D operator*(float num) const {
+//			 return Vector3D(x * num, y * num, z * num);
+//		 }
+//
+//		 /// <summary>
+//		 /// ベクトルにスカラー値を掛ける
+//		 /// </summary>
+//		 /// <param name="num">ベクトルに掛けるスカラー値</param>
+//		 /// <param name="vec">スカラー値を掛けるベクトル</param>
+//		 /// <returns>新しくべきたベクトル</returns>
+//		 friend Vector3D operator*(float num, const Vector3D& vec) {
+//			 return Vector3D(vec.x * num, vec.y * num, vec.z * num);
+//		 }
+//
+//		 /// <summary>
+//		 /// ２つのベクトルの足し算
+//		 /// </summary>
+//		 /// <param name="vec">呼び出しオブジェクトに加えるベクトル</param>
+//		 /// <returns>２つのベクトルの和</returns>
+//		 Vector3D operator+(const Vector3D& vec) const {
+//			 return Vector3D(x + vec.x, y + vec.y, z + vec.z);
+//		 }
+//
+//		 /// <summary>
+//		 /// ２つのベクトルの引き算
+//		 /// </summary>
+//		 /// <param name="vec">呼び出しオブジェクトから引くベクトル</param>
+//		 /// <returns>２つのベクトルの差</returns>
+//		 Vector3D operator-(const Vector3D& vec) const {
+//			 return Vector3D(x - vec.x, y - vec.y, z - vec.z);
+//		 }
+//
+//		 /// <summary>
+//		 /// 呼び出しベクトルの正規化。これによって呼び出しベクトルが変わる
+//		 /// </summary>
+//		 /// <param name="">なし</param>
+//		 /// <returns>なし</returns>
+//		 void normalizeVector3D(void) {
+//			 float mag = sqrtf(x * x + y * y + z * z);
+//			 x /= mag; y /= mag; z /= mag;
+//		 }
+//
+//		 /// <summary>
+//		 /// ２つのベクトルの内積
+//		 /// </summary>
+//		 /// <param name="vec">呼び出しオブジェクトと内積するベクトル</param>
+//		 /// <returns>2つのベクトルを内積した値</returns>
+//		 float dotVector3D(const Vector3D& vec) const {
+//			 return x * vec.x + y * vec.y + z * vec.z;
+//		 }
+//
+//		 /// <summary>
+//		 /// ２つのベクトルの外積
+//		 /// </summary>
+//		 /// <param name="vec">呼び出しオブジェクトと外積するベクトル</param>
+//		 /// <returns>新しくできたベクトル</returns>
+//		 Vector3D crossVector3D(const Vector3D& vec) const {
+//			 return Vector3D(
+//				 y * vec.z - z * vec.y, z * vec.x - x * vec.z, x * vec.y - y * vec.x
+//			 );
+//		 }
+//
+//		 //const がつくとエラーになる
+//		 float angleBetween3DVectors( Vector3D& vec)  {
+//			 return (acos(dotVector3D(vec) / (getMagnitude() * vec.getMagnitude())) * (180 / PI));
+//		 }
+// };
 
-		 /// <summary>
-		 /// デストラクタ
-		 /// </summary>
-		 /// <returns>なし</returns>
-		 ~Vector3D(){}
 
-		 /// <summary>
-		 /// 呼び出しベクトルの大きさを計算
-		 /// </summary>
-		 /// <returns></returns>
-		 float getMagnitude() {
-			 return sqrtf(x * x + y * y + z * z);
-		 }
+//---------------------------------------------------------------------
+// 第5章
+//---------------------------------------------------------------------
 
-		 /// <summary>
-		 /// ベクトルにスカラー値を掛ける
-		 /// </summary>
-		 /// <param name="num">ベクトルに掛けるスカラー値</param>
-		 /// <returns>新しくできたベクトル</returns>
-		 Vector3D operator*(float num) const {
-			 return Vector3D(x * num, y * num, z * num);
-		 }
+MathPhysicsAPI struct Matrix3X3 {
+	float index[3][3];
+};
 
-		 /// <summary>
-		 /// ベクトルにスカラー値を掛ける
-		 /// </summary>
-		 /// <param name="num">ベクトルに掛けるスカラー値</param>
-		 /// <param name="vec">スカラー値を掛けるベクトル</param>
-		 /// <returns>新しくべきたベクトル</returns>
-		 friend Vector3D operator*(float num, const Vector3D& vec) {
-			 return Vector3D(vec.x * num, vec.y * num, vec.z * num);
-		 }
+MathPhysicsAPI bool areMatricesEqual(Matrix3X3& a, Matrix3X3& b) {
+	int errorFlag = 0;
+	for (int i = 0; i < 3; i++) {
+		for (int j = 0; j < 3; j++) {
+			if ((a.index[i][j]) != (b.index[i][j])) {
+				errorFlag = 1;
+			}
+		}
+	}
 
-		 /// <summary>
-		 /// ２つのベクトルの足し算
-		 /// </summary>
-		 /// <param name="vec">呼び出しオブジェクトに加えるベクトル</param>
-		 /// <returns>２つのベクトルの和</returns>
-		 Vector3D operator+(const Vector3D& vec) const {
-			 return Vector3D(x + vec.x, y + vec.y, z + vec.z);
-		 }
-
-		 /// <summary>
-		 /// ２つのベクトルの引き算
-		 /// </summary>
-		 /// <param name="vec">呼び出しオブジェクトから引くベクトル</param>
-		 /// <returns>２つのベクトルの差</returns>
-		 Vector3D operator-(const Vector3D& vec) const {
-			 return Vector3D(x - vec.x, y - vec.y, z - vec.z);
-		 }
-
-		 /// <summary>
-		 /// 呼び出しベクトルの正規化。これによって呼び出しベクトルが変わる
-		 /// </summary>
-		 /// <param name="">なし</param>
-		 /// <returns>なし</returns>
-		 void normalizeVector3D(void) {
-			 float mag = sqrtf(x * x + y * y + z * z);
-			 x /= mag; y /= mag; z /= mag;
-		 }
-
-		 /// <summary>
-		 /// ２つのベクトルの内積
-		 /// </summary>
-		 /// <param name="vec">呼び出しオブジェクトと内積するベクトル</param>
-		 /// <returns>2つのベクトルを内積した値</returns>
-		 float dotVector3D(const Vector3D& vec) const {
-			 return x * vec.x + y * vec.y + z * vec.z;
-		 }
-
-		 /// <summary>
-		 /// ２つのベクトルの外積
-		 /// </summary>
-		 /// <param name="vec">呼び出しオブジェクトと外積するベクトル</param>
-		 /// <returns>新しくできたベクトル</returns>
-		 Vector3D crossVector3D(const Vector3D& vec) const {
-			 return Vector3D(
-				 y * vec.z - z * vec.y, z * vec.x - x * vec.z, x * vec.y - y * vec.x
-			 );
-		 }
-
-		 //const がつくとエラーになる
-		 float angleBetween3DVectors( Vector3D& vec)  {
-			 return (acos(dotVector3D(vec) / (getMagnitude() * vec.getMagnitude())) * (180 / PI));
-		 }
- };
-
-
-
+	//行列が等しいかどうかのチェックをする
+	if (errorFlag == 1) {
+		return false;
+	}
+	else {
+		return true;
+	}
+}

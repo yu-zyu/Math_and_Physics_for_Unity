@@ -55,7 +55,15 @@ public class Math_and_PhysicsLib
     public static extern void CompToPolarConversion(Vector2D_comp vec, ref Vector2D_polar temp);
 
 
-  //  [DllImport("NativePluginSample")]
-  //  public static extern class Vector3D;
+    //  [DllImport("NativePluginSample")]
+    //  public static extern class Vector3D;
 
+    public struct Matrix3X3
+    {
+        [MarshalAs(UnmanagedType.ByValArray, SizeConst = 9)]
+        public float[][] index;
+    };
+
+    [DllImport("NativePluginSample")]
+    public static extern bool areMatricesEqual(ref Matrix3X3 a, ref Matrix3X3 b);
 }
