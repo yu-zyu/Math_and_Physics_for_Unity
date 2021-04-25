@@ -22,15 +22,26 @@ public class MatrixAddition : MonoBehaviour
         { 0, 0, 0 }
     };
 
+    public bool isMinus;
+
     // Start is called before the first frame update
     void Start()
     {
-        for(int i=0; i < 3; i++)
+        for (int i = 0; i < 3; i++)
         {
-            for(int j=0; j<3; j++)
+            for (int j = 0; j < 3; j++)
             {
-                AB[i, j] = A[i, j] + B[i, j];
+                if (isMinus)
+                {
+                    AB[i, j] = A[i, j] - B[i, j];
+                }
+                else
+                {
+                    AB[i, j] = A[i, j] + B[i, j];
+                }
+
                 Debug.Log(AB[i, j]);
+
             }
         }
     }
@@ -38,6 +49,6 @@ public class MatrixAddition : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+
     }
 }
