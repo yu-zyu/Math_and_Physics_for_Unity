@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class TwoDimensionalUniformScaling : MonoBehaviour
+public class TwoDimensionalNonUniformScaling : MonoBehaviour
 {
     private Material _material;
     public float[] A = new float[3];
