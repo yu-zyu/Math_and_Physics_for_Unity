@@ -44,11 +44,11 @@ public class TwoDimensionalRotation : MonoBehaviour
         if (isMove)
         {
             Matrix3X3 matrixA = new Matrix3X3();
-            A = MatrixMultiplication(matrixA, A);
+            A = MatrixRotation(matrixA, A);
             Matrix3X3 matrixB = new Matrix3X3();
-            B = MatrixMultiplication(matrixB, B);
+            B = MatrixRotation(matrixB, B);
             Matrix3X3 matrixC = new Matrix3X3();
-            C = MatrixMultiplication(matrixC, C);
+            C = MatrixRotation(matrixC, C);
             isMove = false;
         }
 
@@ -68,7 +68,7 @@ public class TwoDimensionalRotation : MonoBehaviour
 
     }
 
-    public float[] MatrixMultiplication(Matrix3X3 X, float[] vertex)
+    public float[] MatrixRotation(Matrix3X3 X, float[] vertex)
     {
         // cos  -sin  0 
         // sin   cos  0 
