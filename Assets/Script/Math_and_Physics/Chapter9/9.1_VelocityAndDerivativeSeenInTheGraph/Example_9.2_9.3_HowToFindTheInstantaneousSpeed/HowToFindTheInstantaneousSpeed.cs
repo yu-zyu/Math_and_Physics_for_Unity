@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class HowToFindTheAverageSpeed : MonoBehaviour
+public class HowToFindTheInstantaneousSpeed : MonoBehaviour
 {
     public float v;
     public float b;
@@ -19,6 +19,8 @@ public class HowToFindTheAverageSpeed : MonoBehaviour
     public float t;
     public float resutlT;
     public LineRenderer lineRenderer;
+
+    public float hh;
 
     // Start is called before the first frame update
     void Start()
@@ -47,14 +49,14 @@ public class HowToFindTheAverageSpeed : MonoBehaviour
         }
         resutlT = f(t);
 
-        v = (f(b) - f(aa)) / (b - aa);
-        lineRenderer.SetPosition(0, new Vector3(b,f(b), 0));
-        lineRenderer.SetPosition(1, new Vector3(aa,f(aa), 0));
+        v = (f(aa + hh) - f(aa)) / hh;
+        lineRenderer.SetPosition(0, new Vector3(hh,f(aa + hh), 0));
+        lineRenderer.SetPosition(1, new Vector3(hh,f(aa), 0));
     }
 
     float f(float t)
     {
-        float y = a * Mathf.Pow(t - h, 2) + k;
+        float y = a * Mathf.Pow(t, 2) + k;
         return y;
     }
 
