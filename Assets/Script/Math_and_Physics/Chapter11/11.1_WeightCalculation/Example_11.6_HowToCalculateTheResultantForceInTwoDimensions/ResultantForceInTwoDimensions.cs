@@ -8,8 +8,8 @@ public class ResultantForceInTwoDimensions : MonoBehaviour
     public Vector2 fr;
     public float pull;
     public float pullAngle;
-    public float fk;
-    public float n;
+    public Vector2 fk;
+    public Vector2 n;
     public float u;
     public float lbs;
     public Vector2 w;
@@ -21,8 +21,9 @@ public class ResultantForceInTwoDimensions : MonoBehaviour
     {
         w = new Vector2(0, lbs / n1);
         fr = new Vector2(pull * Mathf.Cos(pullAngle * Mathf.Deg2Rad), pull * Mathf.Sin(pullAngle * Mathf.Deg2Rad));
-        normalForce = w + fr;
-        ///combinedForce = w + fr + n + fk;
+        normalForce.y = -(w.y + fr.y);
+        fk.x = -(u * normalForce.y);
+        combinedForce = w + fr + normalForce + fk;
         
         
     }
