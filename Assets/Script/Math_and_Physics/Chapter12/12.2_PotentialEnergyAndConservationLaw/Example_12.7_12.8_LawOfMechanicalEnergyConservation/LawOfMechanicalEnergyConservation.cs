@@ -13,15 +13,25 @@ public class LawOfMechanicalEnergyConservation : MonoBehaviour
     public float yf;
     public float vi;
     public float vf;
+    public bool improvement;
+    public float e;
 
     // Start is called before the first frame update
     void Start()
     {
+
         n = lbs / n1;
         m = n / g;
 
-        vf = Mathf.Sqrt(((0.5f * m + Mathf.Pow(vi, 2)) + (m * g * yi)) / ((0.5f * m) + (m * g * yf)));
-        
+        if (!improvement)
+        {
+            vf = Mathf.Sqrt(((0.5f * m + Mathf.Pow(vi, 2)) + (m * g * yi)) / ((0.5f * m) + (m * g * yf)));
+        }
+        else
+        {
+            vf = Mathf.Sqrt(((0.5f * m + Mathf.Pow(vi, 2)) + (m * g * yi) - e) / ((0.5f * m) + (m * g * yf)));
+        }
+
     }
 
     // Update is called once per frame

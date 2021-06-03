@@ -159,6 +159,8 @@ MonoBehaviour:
   yf: 0
   vi: 0
   vf: 0
+  improvement: 1
+  e: 2000
 --- !u!4 &997948278
 Transform:
   m_ObjectHideFlags: 0
